@@ -5,20 +5,22 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'layer-bg': "url('/src/assets/icon/bg-layer.png')",
+      },
     colors: {
-     
       "blue-400" :"#020043",
       "blue-300" :"#343268",
       "blue-200" :"#4D4C7B",
       "gold" :"#FFC637",
       "secondery-color":"#FFFFF5",
       "color-white":"#FFFFFF"
-      
      },
      fontFamily: {
        Inter: ["Inter", "sans-serif"]
      },
+    },
   },
   plugins: [],
 }

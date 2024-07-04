@@ -1,13 +1,12 @@
 import React from 'react'
 import Navbar from '../component/Header/Navbar'
+import Header from '../component/Header/Header'
 
 function HomePage() {
   return (
     <div>
       {/* Header */}
-      <section>
-        <Navbar />
-      </section>
+      <Header />
     </div>
   )
 }

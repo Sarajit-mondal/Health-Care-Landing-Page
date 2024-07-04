@@ -4,7 +4,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import DropdownButton from './DropDownButton';
 function Navbar() {
   return (
-    <header className="bg-blue-500 p-4">
+    <header className="bg-blue-500 p-4 mt-5">
     <div className="container mx-auto flex justify-between items-center">
       <img src={logo} alt="" className='w-[124px]'/>
       <nav className='hidden md:flex'>
