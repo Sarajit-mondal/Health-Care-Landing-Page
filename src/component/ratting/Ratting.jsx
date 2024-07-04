@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper/modules';
 function Ratting() {
   return (
-    <div className='space-y-5 my-10'>
+    <div className='space-y-5 my-20'>
       <button className='px-3 py-1 border-2 rounded-2xl'>Testimonial</button>
       <h2>What they say about us</h2>
 
@@ -29,16 +29,17 @@ function Ratting() {
         spaceBetween={30}
         freeMode={true}
         pagination={true} 
-        // modules={[Pagination]}
-         modules={[FreeMode]}
+        modules={[Pagination]}
+        //  modules={[FreeMode]}
         className="mySwiper"
+        style={{ marginTop: '30px'}} 
       >
     
         {/* slider  */}
          <div>
          {
         allReview && allReview.map(review =>  <SwiperSlide key={review._id}>
-          <div className='cursor-pointer justify-between h-full p-4 space-y-3 '>
+          <div className='cursor-pointer justify-between min-h-[240px] p-4 space-y-3 '>
           <h3>{review.title}</h3>
           <p>{review.description}</p>
           <div className='flex items-center gap-2'>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Question() {
   return (
-    <div>
+    <div className='my-20'>
        <button className='px-3 py-1 border-2 rounded-2xl'>Faq</button>
        <h2>Frequently Asked Question</h2>
 

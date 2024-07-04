@@ -1,17 +1,19 @@
 import React from 'react';
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import logo from '../../assets/media/logolight.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-400  py-8">
+    <footer className="bg-[#050165]  py-8">
     <section>
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 text-white">
         <div className="flex flex-col">
-          <img src="/path/to/logo.png" alt="Logo" className="mb-4"/>
+          <img src={logo} alt="Logo" className="mb-4 w-40"/>
           <p>1234 Street Name,<br/>City, State, Zip Code</p>
           <p><a href="mailto:support@example.com" className="text-white">support@example.com</a></p>
         </div>
         <div>
-          <h4 className="font-bold mb-2">Quick Links</h4>
+        
           <ul>
             <li><a href="/home" className="hover:underline">Home</a></li>
             <li><a href="/about" className="hover:underline">About Us</a></li>
@@ -20,7 +22,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h4 className="font-bold mb-2">Services</h4>
+        
           <ul>
             <li><a href="/services" className="hover:underline">Services</a></li>
             <li><a href="/scheduling" className="hover:underline">Scheduling</a></li>
@@ -31,16 +33,39 @@ const Footer = () => {
         <div>
           <h4 className="font-bold mb-2">Follow Us</h4>
           <ul className="flex space-x-4">
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Facebook</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</a></li>
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a></li>
-            <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:underline">YouTube</a></li>
-          </ul>
-        </div>
+  <li>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <FaFacebook />
+    </a>
+  </li>
+  <li>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <FaInstagram />
+    </a>
+  </li>
+  <li>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <FaLinkedin />
+    </a>
+  </li>
+  <li>
+    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <FaYoutube />
+    </a>
+  </li>
+  
+
+</ul>
+<div className=" mt-8 text-white ">
+        <p>&copy; @docplus {new Date().getFullYear()} </p>
       </div>
-      <div className="text-center mt-8">
-        <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
+
+ </div>
+
+
+
       </div>
+     
     </section>
     </footer>
   );

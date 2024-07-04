@@ -15,7 +15,7 @@ function Banner() {
       {/* Grid layout */}
       {/* Grid layout */}
 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5'>
-  <div className='bg-[#FFFFF5] p-5 max-w-full sm:max-w-[216px] rounded-[24px] h-[312px]'>
+  <div className='bg-[#ffffff] p-5 max-w-full sm:max-w-[216px] rounded-[24px] h-[312px]'>
     <h2>90%</h2>
     <p className='text-[14px] max-w-[156px]'>Patient satisfaction rate, reflecting our commitment.</p>
     <img src={grap} alt="" className='mt-5 mx-auto' />
@@ -28,13 +28,13 @@ function Banner() {
     </div>
     {/* Center button */}
     <div className='flex flex-col sm:flex-row justify-between gap-5 items-end'>
-      <div className='bg-[#FFFFF5] p-5 rounded-[24px] min-w-full sm:min-w-[216px]'>
+      <div className='bg-[#ffffff] p-5 rounded-[24px] min-w-full sm:min-w-[216px]'>
         <h2>500+</h2>
         <p className='text-[14px] max-w-[156px]'>Board-certified <br/> doctors</p>
         <img src={certificate} alt="" className='ml-24 -mt-2' />
       </div>
       {/* Center */}
-      <div className='bg-[#FFFFF5] p-5 rounded-[24px] min-w-full sm:min-w-[216px] max-h-[162px]'>
+      <div className='bg-[#ffffff] p-5 rounded-[24px] min-w-full sm:min-w-[216px] max-h-[162px]'>
         <h2 className='flex items-center '>4.8 <FaStar className='text-gold'></FaStar></h2>
         <p className='text-[14px] max-w-[156px]'>Over 20,000 Patient</p>
         {/* Participants images */}
@@ -46,7 +46,7 @@ function Banner() {
         </div>
       </div>
       {/* Center bottom */}
-      <div className='bg-[#FFFFF5] p-5 rounded-[24px] min-w-full sm:min-w-[216px]'>
+      <div className='bg-[#ffffff] p-5 rounded-[24px] min-w-full sm:min-w-[216px]'>
         <h2>$5000</h2>
         <p className='text-[14px] max-w-[156px]'>Money spent <br /> for poor patients</p>
         <img src={gold} alt="" className='ml-24 -mt-2' />
@@ -55,7 +55,7 @@ function Banner() {
   </div>
 
   {/* Right col */}
-  <div className='bg-[#FFFFF5] p-5 min-w-full sm:min-w-[216px] rounded-[24px] h-[312px]'>
+  <div className='bg-[#ffffff] p-5 min-w-full sm:min-w-[216px] rounded-[24px] h-[312px]'>
     <h2>50+</h2>
     <p className='text-[14px] max-w-[156px]'>Free lesson videos for patients</p>
     <img src={youtube} alt="" className='mt-5 mx-auto' />
