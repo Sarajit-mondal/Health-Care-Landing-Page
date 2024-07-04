@@ -17,7 +17,7 @@ function Misstion() {
         <div className='md:relative md:w-[568px] w-full'>
             <img src={missition} alt="" className='md:absolute w-full md:h-[415px]'/>
             {/* card */}
-            <div className='block md:absolute z-10 bg-[#343268] -bottom-10 -left-20 md:w-96 text-left px-5 space-y-2 py-7 text-white rounded-3xl'>
+            <div className='block md:absolute z-10 bg-[#343268] -bottom-5 -left-20 md:w-96 text-left px-5 space-y-2 py-7 text-white rounded-3xl'>
                 <h3>Our mission is simple</h3>
                 <p>To provide high-quality healthcare services that are accessible, personalized, and patient-centered.</p>
             </div>

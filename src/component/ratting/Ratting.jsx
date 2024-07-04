@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper/modules';
 function Ratting() {
   return (
-    <div>
+    <div className='space-y-5 my-10'>
       <button className='px-3 py-1 border-2 rounded-2xl'>Testimonial</button>
       <h2>What they say about us</h2>
 
@@ -29,8 +29,8 @@ function Ratting() {
         spaceBetween={30}
         freeMode={true}
         pagination={true} 
-        modules={[Pagination]}
-        // modules={[FreeMode]}
+        // modules={[Pagination]}
+         modules={[FreeMode]}
         className="mySwiper"
       >
     
@@ -38,8 +38,22 @@ function Ratting() {
          <div>
          {
         allReview && allReview.map(review =>  <SwiperSlide key={review._id}>
-          <div className='flex flex-col cursor-pointer justify-between border-2 border-skyBlue-300 h-full p-4'>
-          <FaStar />
+          <div className='cursor-pointer justify-between h-full p-4 space-y-3 '>
+          <h3>{review.title}</h3>
+          <p>{review.description}</p>
+          <div className='flex items-center gap-2'>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCniQHB7k5vbhtHKyCwb9RRxwBfR28Q2jr45c8lPn4T2cmH5vVsejyNLQsKFSr-cTpz7s&usqp=CAU" alt=""className='size-11 rounded-full' />
+            <div>
+              <h4 className='font-bold'>{review.name},<small className='font-semibold'>{review.surname}</small></h4>
+              <span className='flex'>
+          {
+             [...Array(5)].map(rating => <FaStar className='text-[#FFE03D]' />)
+           }
+          </span>
+            </div>
+          
+          </div>
+          
           </div>
          </SwiperSlide>)
       }
