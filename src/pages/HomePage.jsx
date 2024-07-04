@@ -4,10 +4,11 @@ import Header from '../component/Header/Header'
 import Misstion from '../component/OurMission/Misstion'
 import Empower from '../component/empower/Empower'
 import OnlineDoctor from '../component/Doctor/OnlineDoctor'
+import Ratting from '../component/ratting/Ratting'
 
 function HomePage() {
   return (
-    <div>
+    <div > 
       {/* Header */}
       <Header />
       {/* Mission */}
@@ -19,6 +20,9 @@ function HomePage() {
       </section>
       <section>
         <OnlineDoctor />
+      </section>
+      <section className='pt-[640px] md:pt-0'>
+        <Ratting />
       </section>
     </div>
   )
