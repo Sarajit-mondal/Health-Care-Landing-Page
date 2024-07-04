@@ -8,9 +8,9 @@ import { FaStar } from 'react-icons/fa'
 function Banner() {
   return (
     <div>
-        <img alt="" className='rounded-[50px] my-10 h-[470px]'  style={{ 
+       <div className='rounded-[50px] my-10 h-[470px]'  style={{ 
         backgroundImage: ` linear-gradient(179.57deg, rgba(0, 193, 157, 0) -25.412%,rgba(2, 0, 67, 0.47) 107.111%), url(${bannerImage})` 
-      }} />
+      }}></div>
 
       {/* Grid layout */}
       {/* Grid layout */}
