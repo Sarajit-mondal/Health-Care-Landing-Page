@@ -5,6 +5,8 @@ import Misstion from '../component/OurMission/Misstion'
 import Empower from '../component/empower/Empower'
 import OnlineDoctor from '../component/Doctor/OnlineDoctor'
 import Ratting from '../component/ratting/Ratting'
+import Question from '../component/question/Question'
+import Footer from '../component/footer/Footer'
 
 function HomePage() {
   return (
@@ -24,6 +26,10 @@ function HomePage() {
       <section className='pt-[640px] md:pt-0'>
         <Ratting />
       </section>
+      <section>
+        <Question />
+      </section>
+      <Footer />
     </div>
   )
 }

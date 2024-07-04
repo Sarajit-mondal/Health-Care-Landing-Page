@@ -20,7 +20,7 @@ function OnlineDoctor() {
     <div className='static md:relative md:w-[568px] w-full'>
         <img src={pasant} alt="" className='md:absolute w-full md:h-[415px] rounded-2xl'/>
         {/* card */}
-        <div className='static md:absolute z-10 bg-[#343268CC] bottom-16 left-5 md:w-96 text-left px-5 space-y-2 py-7 text-white rounded-3xl flex items-end gap-4'>
+        <div className=' md:absolute z-10 bg-[#343268CC] bottom-16 left-5 md:w-96 text-left px-5 space-y-2 py-7 text-white rounded-3xl flex items-end gap-4'>
            <div>
            <h3>Consultancy your health</h3>
            <p>Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precision </p>
