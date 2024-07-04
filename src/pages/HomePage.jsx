@@ -7,6 +7,7 @@ import OnlineDoctor from '../component/Doctor/OnlineDoctor'
 import Ratting from '../component/ratting/Ratting'
 import Question from '../component/question/Question'
 import Footer from '../component/footer/Footer'
+import Offer from '../component/offer/Offer'
 
 function HomePage() {
   return (
@@ -29,6 +30,7 @@ function HomePage() {
       <section>
         <Question />
       </section>
+      <Offer />
       <Footer />
     </div>
   )
